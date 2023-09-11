@@ -25,7 +25,7 @@ const updateCurrentDayAndTime = function () {
   currentDayElement.textContent = currentDayOfWeek;
 
   //setting Time
-  const utcTimeString = now.toLocaleTimeString("en-US");
+  const utcTimeString = now.getTime();
   currentTimeElement.textContent = utcTimeString;
 };
 // Check if the current time is within +/- 10 seconds of UTC time
