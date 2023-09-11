@@ -126,9 +126,9 @@ nav ul li a:hover {
   }
   .navinfo {
     position: absolute;
-    bottom: 101%;
-    left: -100%;
-    margin-bottom: 0.2rem;
+    bottom: 100%;
+    left: -80%;
+    margin-bottom: 0.3rem;
     display: none;
     text-align: center;
 
