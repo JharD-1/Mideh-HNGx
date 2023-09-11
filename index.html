@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=Poppins:ital,wght@0,100;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Mideh~HNGx</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2 class="logo__text">↪ <img src="/img/slack-svgrepo-com.svg" alt=""> ↩</h2>
+        </div>
+        <input type="checkbox" name="" id="menu">
+        <label for="menu">&Congruent;</label>
+        <nav class="navbar">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Skills</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="detail__name">
+                <h3>Hi, <br>I'm <span style="color: #6161b1;" data-testid="James Ayomide">James Ayomide</span>,
+                    a<br><span data-testid="Frontend Developer">Frontend Developer</span></h3>
+            </div>
+            <div class="profile__img">
+                <img src="img/mideh-transformed.png" alt="James Ayomide" data-testid="slackDisplayImage">
+            </div>
+            <div class="bio">
+                Presently at HNG-X building my frontend skills. <br>You can check out the code for this page
+                on my Github Repository. <br>
+                <a href="http://"><img src="/img/github-142-svgrepo-com.svg" alt="" data-testid="githubURL"></a>
+            </div>
+        </section>
+
+    </main>
+    <section class="current">
+
+        <input type="checkbox" name="" id="info">
+        <label for="info"><strong>i</strong></label>
+        <nav class="navinfo">
+            <h4>Status:</h4>
+            <div class="current-day" data-testid="currentDayOfTheWeek"></div>
+            <div class="current-time" data-testid="currentUTCTime">
+            </div>
+        </nav>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
