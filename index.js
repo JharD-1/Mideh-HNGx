@@ -12,13 +12,13 @@ const updateCurrentDayAndTime = function () {
 
   // setting Day
   const daysOfWeek = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
-    "Sunday",
+    "Saturday", 
   ];
 
   const currentDayOfWeek = daysOfWeek[now.getDay()];
