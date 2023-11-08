@@ -5,10 +5,11 @@ const currentDayElement = document.querySelector(
 const currentTimeElement = document.querySelector(
   '[data-testid="currentUTCTime"]'
 );
+  const now = new Date();
+
 
 // Function to update the current day and time
 const updateCurrentDayAndTime = function () {
-  const now = new Date();
 
   // setting Day
   const daysOfWeek = [
@@ -25,12 +26,11 @@ const updateCurrentDayAndTime = function () {
   currentDayElement.textContent = currentDayOfWeek;
 
   //setting Time
-  const utcTimeString = now.getTime();
+  const utcTimeString = now.toLocaleTimeString("en-US");
   currentTimeElement.textContent = utcTimeString;
 };
 // Check if the current time is within +/- 10 seconds of UTC time
 const checkAccuracy = function () {
-  const now = new Date();
   const utcTime = now.toLocaleTimeString("en-US");
   const marginInSeconds = 10;
   const allowableDeviation = marginInSeconds * 1000;
